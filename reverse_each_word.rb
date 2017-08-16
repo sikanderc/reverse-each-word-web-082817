@@ -5,3 +5,9 @@ def reverse_each_word(string)
   end
   split_string.join(" ")
 end
+
+# better way:
+# sentence.split.collect {|word| word.reverse}.join(" ")
+
+# Without iterating:
+# sentence.reverse.split.reverse.join(" ")
